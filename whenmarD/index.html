@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio - Whenmar Dinoy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="home" class="page active">
+    <img src="whenmar.jpg" alt="Profile Picture" class="profile">
+    <h1>Whenmar Dinoy</h1>
+    <h2>BSIT - 2D</h2>
+    <button class="btn" onclick="goTo('menu')">Click Me</button>
+  </div>
+
+  <div id="menu" class="page">
+    <div class="card" onclick="goTo('about')">
+      ABOUT ME <br><button class="btn small">Click Me</button>
+    </div>
+    <div class="card" onclick="goTo('skills')">
+      SKILLS <br><button class="btn small">Click Me</button>
+    </div>
+    <div class="card" onclick="goTo('project')">
+      PROJECT <br><button class="btn small">Click Me</button>
+    </div>
+    <br>
+    <button class="btn" onclick="goTo('home')">Back</button>
+  </div>
+
+  <div id="about" class="page">
+    <h2>ABOUT ME:</h2>
+    <p class="about-text">
+      I am an Information Technology (IT) student who is passionate about learning how
+      technology shapes the modern world. As a student, I am curious, eager to explore
+      new concepts, and always willing to improve my skills, especially in areas like
+      programming, networking, and system analysis. I enjoy solving problems using logic
+      and creativity, which helps me appreciate the importance of IT in real-life situations.
+    </p>
+    <br>
+    <button class="btn" onclick="goTo('home')">Home</button>
+    <button class="btn" onclick="goTo('menu')">Back</button>
+  </div>
+
+  <!-- Frame 4 (Skills) -->
+  <div id="skills" class="page">
+    <h2>SKILLS:</h2>
+    <div class="skills-list">
+      <p><img src="html.jpg"> HTML</p>
+      <p><img src="css.jpg"> CSS</p>
+      <p><img src="figma.jpg"> FIGMA</p>
+    </div>
+    <br>
+    <button class="btn" onclick="goTo('home')">Home</button>
+    <button class="btn" onclick="goTo('menu')">Back</button>
+  </div>
+
+  <!-- Frame 5 (Project) -->
+  <div id="project" class="page">
+    <h2>PROJECT:</h2>
+    <div class="project-content">
+      <img src="project.jpg" alt="Project Photo" class="project-img">
+      <p>
+        HTML, or HyperText Markup Language, is the standard language used to create and structure web pages. It uses tags to define elements like headings, paragraphs, images, links, and tables, telling the browser how to display the content. HTML is not a programming language—it focuses on organizing and presenting information, often working together with CSS for design and JavaScript for interactivity. In short, HTML is the backbone of every website, forming the foundation upon which everything else is built.
+      </p>
+    </div>
+    <br>
+    <button class="btn" onclick="goTo('home')">Home</button>
+    <button class="btn" onclick="goTo('menu')">Back</button>
+  </div>
+
+  <script>
+    function goTo(pageId) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>

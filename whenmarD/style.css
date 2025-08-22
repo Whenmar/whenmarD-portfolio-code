@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #8b1b1b; /* red theme */
+  color: white;
+  text-align: center;
+}
+
+.page {
+  display: none;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.active {
+  display: block;
+}
+
+img.profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+h1, h2 {
+  margin: 20px 0;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: #000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.btn.small {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: #444;
+}
+
+.card {
+  display: inline-block;
+  margin: 20px;
+  padding: 30px;
+  background: #d1cfcf;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.skills-list {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: left;
+  display: inline-block;
+}
+
+.skills-list img {
+  width: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.about-text {
+  max-width: 600px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.project-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+.project-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+  object-fit: cover;
+}
